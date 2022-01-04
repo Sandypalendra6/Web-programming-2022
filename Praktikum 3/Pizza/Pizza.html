@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+</html>
+<head>
+    <title>Pizza</title>
+</head>
+    <body style="background-color: #FAEBD7; justify-content: center; display:flex;">
+       <fieldset>
+            <h2>Black Goose|Pizza-on-Demand</h2>
+            <p>
+            Our 12"wood-fired pizzas are available for delivery. Build your
+            <br>
+            custom pizza and we`ll deliver it within an hour
+            </p>
+           Your Information
+        <form method="post" action="http://blackgoosebistro.com/pizza.php">
+            Name : <input type="text" name="username">
+            <br>
+            Adress : <input type="text" name="adress">
+            <br>
+            Telephone : <input type="text" name="number">
+            <br>
+            Email : <input type="text" name="email" id="firstlast">
+            <br>    
+            Delivery instructions :
+            <br>
+            <textarea name="deliveryInstructions" cols="40" rows="3"></textarea>
+            <p>
+            <b>Desain Your Dream Pizza</b>
+            <br>
+            pizza specs
+            <p>
+            Crust (Choose one)
+            <br>
+            <input type="checkbox"value="2"/>Clasic white<br />
+            <input type="checkbox"value="3"/>Multigrain<b           r />
+            <input type="checkbox"value="4"/>Cheese-stuffed crust<br />
+            <input type="checkbox"value="5"/>Gluten-free<br />
+
+            Toppings (Chosse as many as you want):
+            <br>
+            <input type="checkbox"value="2"/>Red sauce <br />
+            <input type="checkbox"value="3"/>White sauce<br />
+            <input type="checkbox"value="4"/>Mozzarella Cheese<br />
+            <input type="checkbox"value="5"/>Pepperoni<br />
+            <input type="checkbox"value="2"/>Mushrooms<br />
+            <input type="checkbox"value="3"/>Peppers<br />
+            <input type="checkbox"value="4"/>Anchovies<br />
+            <br>
+            Number
+            <br>
+            How many pizzas :
+            <input id="number" type="number"
+            value="0" min="0" max="7" step="1"/>
+            <p>
+            <input type="submit" value="Bring me a pizza !">
+            &ensp;
+            <input type="reset" value="Reset">
+
+            
+        </form>
+        </fieldset>
+</body>
+</html>
