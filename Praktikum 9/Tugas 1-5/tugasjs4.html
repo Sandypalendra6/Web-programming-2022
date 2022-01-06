@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Picker</title>
+</head>
+<style>
+    * {
+        margin: 5px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .body {
+        border: 3px solid black;
+        border-radius: 5px;
+        width: 100vh;
+    }
+    .gambar {
+        width: 50vh;
+    }
+</style>
+<script>
+    function pilih() {
+        let tugas4 = document.getElementById("bts");
+        let idx = tugas4.selectedIndex;
+        console.log("bts index ke-" + idx + " adalah " + tugas4[idx].value);
+        let area_gambar = document.getElementById("gambar");
+        area_gambar.src="gambar/" + tugas4[idx].value + ".jpg"
+        alert("Dia adalah  :  " + tugas4.value)
+    }
+</script>
+<body class="body">
+    <form id="form">
+        <select id="bts" onchange="pilih()">
+            <option value="kosong">Belum dipilih</option>
+            <option value="mobil">mobil</option>
+            <option value="motor">motor</option>
+            <option value="kereta">kereta</option>
+            <option value="angkot">angkot</option>
+            <option value="bus">bus</option>
+        </select>
+    </form>
+    <br>
+    <img class="gambar" src="gambar\kosongguys.jpg" alt="Tidak dipilih" id="gambar"/>
+</body>
+</html>
